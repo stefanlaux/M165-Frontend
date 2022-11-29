@@ -1,8 +1,9 @@
 import { createTheme, ThemeProvider } from '@mui/material';
 import React from 'react';
 import './App.css';
-import Login from './Login/Login';
+import Home from './Home/Home';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import Movies from './Movies/Movies';
 
 function App() {
 
@@ -17,8 +18,8 @@ function App() {
     <div className="App">
 
   <Routes>
-    <Route path="/login" element={<Login />} />
-  
+    <Route path="/home" element={<Home />} />   
+    <Route path="/movies" element={<Movies />} />   
   </Routes>
 
     </div>

@@ -1,0 +1,62 @@
+@import url('https://fonts.googleapis.com/css2?family=Urbanist:ital,wght@0,100;0,200;0,300;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,400;1,500;1,600;1,800;1,900&display=swap');
+
+.home{
+    height: 100vh;
+    width: 100vh;
+}
+
+.title{
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    font-size: 500%;
+    font-weight: 700;
+    font-style: bold;
+    width: 90vw;
+}
+
+.colorTitle{
+    background: -webkit-linear-gradient(bottom right, #D46268, #9447B3);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+.title2{
+    display: flex;
+}
+
+.invisible{
+    color: transparent;
+    user-select: none;
+    padding: 10px;
+}
+
+.explore{
+    position: absolute;
+    top: 90%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    font-size: 150%;
+    font-weight: 700;
+    text-align: center;
+}
+
+.nav{
+    position: fixed;
+    top: 3%;
+    right: 8%;
+    transform: translate(50%, -50%);
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 90vw;
+
+}
+
+Button:hover{
+    background-color: transparent!important;
+    background: transparent!important;
+}
