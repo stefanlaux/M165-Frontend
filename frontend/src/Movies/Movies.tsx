@@ -19,7 +19,7 @@ export default function Movies() {
   const [movies, setMovies] = React.useState<Array<Movie>>([]);
 
   //Base URL is wrong
-  axios.get('http://10.62.104.255:8080/movies/1').then((response) => {
+  axios.get('http://10.62.105.47:8080/movies/1').then((response) => {
     setMovies(response.data);
   });
 
@@ -41,7 +41,6 @@ export default function Movies() {
           )
         )}
        
-
         </div>
   );
 }

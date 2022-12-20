@@ -25,7 +25,7 @@ export default function Home() {
         <div className="explore">
             <span>Explore</span>
             <br />
-            <IconButton size='medium'>
+            <IconButton size='medium' href='#documentation'>
                 <KeyboardArrowDownIcon fontSize='large' />
             </IconButton>
         </div>
