@@ -1,6 +1,6 @@
 import { Grid } from '@mui/material';
 import axios from 'axios';
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 import Card from '../Prefabs/Card';
 import './Movies.css';
 
@@ -16,17 +16,19 @@ interface Movie {
 
 export default function Movies() {
 
-  const [movies, setMovies] = React.useState<Array<Movie>>([]);
+  const [movies, setMovies] = React.useState([]);
 
-  //Base URL is wrong
-  axios.get('http://10.62.105.47:8080/movies/1').then((response) => {
-    setMovies(response.data);
-  });
+  useEffect(() =>{
+    axios.get('http://localhost:8080/movies/').then((response) => {
+      setMovies(response.data);
+    });
+  }, [])
+
 
   return (
     <div className='Movies'>
        
-       {movies.map(
+       {movies && Array.isArray(movies) && movies.map(
           (movies: {
             id: number;
             title: string;
