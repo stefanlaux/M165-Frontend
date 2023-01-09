@@ -1,0 +1,35 @@
+.headerLine {
+    margin-right: 3%;
+    margin-left: 3%;
+    height: 0;
+    border: 2px solid;
+    border-color: #D46268;
+  }
+  
+  .headerTitle {
+    margin-top: 5px;
+    position: relative;
+    text-align: center;
+    color: white;
+  }
+
+  .colorTitle{
+    background: -webkit-linear-gradient(bottom right, #D46268, #9447B3);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+
+.add {
+   right: 5%;
+   top: 3%;
+   position: absolute!important;
+   transform: translate(50%);
+}
+
+.document{
+    left: 5%;
+    top: 3%;
+    position: absolute!important;
+    transform: translate(-50%);
+}

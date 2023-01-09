@@ -4,6 +4,7 @@ import CardActions from "@mui/material/CardActions";
 import CardContent from "@mui/material/CardContent";
 import Button from "@mui/material/Button";
 import { Typography } from "@mui/material";
+import DeleteForeverIcon from '@mui/icons-material/DeleteForever';
 
 
 
@@ -42,6 +43,9 @@ export default function card({
         <CardActions>
           <Button size="medium" className="detailsButton" onClick={handleClick}>
             Details
+          </Button>
+          <Button size="medium" className="detailsButton" onClick={handleClick}>
+            <DeleteForeverIcon color="error"></DeleteForeverIcon>
           </Button>
         </CardActions>
       </Card>

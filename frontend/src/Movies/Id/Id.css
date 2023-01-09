@@ -1,0 +1,20 @@
+.normalDetails {
+    position: absolute;
+    top: 15%;
+    left: 5%;
+    text-align: left;
+    width: fit-content;
+    color: white;
+    line-height: 5px;
+    font-size: 20px;
+  }
+  
+  .idDisplay {
+    position: absolute;
+    right: 1%;
+    top: 35%;
+    text-align: left;
+    font-size: 500%;
+    color: white;
+    transform: translate(-50%, -50%);
+  }
