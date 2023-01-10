@@ -28,7 +28,7 @@ export default function Id() {
     );
 
     useEffect(() =>{
-      axios.get('http://10.62.105.47:8080/movies/' + id).then((response) => {
+      axios.get('http://10.62.105.7:8080/movies/' + id).then((response) => {
         setMovies(response.data);
       });
     }, [])

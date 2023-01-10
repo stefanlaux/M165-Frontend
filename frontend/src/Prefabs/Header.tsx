@@ -14,7 +14,7 @@ export default function header(){
       <IconButton className="document" href="/home#documentation">
         <ArticleIcon color="info"></ArticleIcon>
     </IconButton>
-      <IconButton className="add" href="movies/add/">
+      <IconButton className="add" href="/movies/add/">
           <AddCircleIcon color="info"></AddCircleIcon>
     </IconButton>
     <h1 className="headerTitle colorTitle">Movies</h1>

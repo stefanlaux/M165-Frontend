@@ -5,6 +5,7 @@ import CardContent from "@mui/material/CardContent";
 import Button from "@mui/material/Button";
 import { Typography } from "@mui/material";
 import DeleteForeverIcon from '@mui/icons-material/DeleteForever';
+import axios from "axios";
 
 
 
@@ -21,9 +22,15 @@ export default function card({
   genre,
   length,
 }: props) {
-  const handleClick = () => {
+  const handleDetails = () => {
     window.location.href = `/movies/${id}`;
   };
+
+  const handleDelete = () => {
+    axios.delete('http://10.62.105.7:8080/movies/' + id).then((response) => {
+      window.location.href = `/movies/`;
+    });
+  }
 
 
   return (
@@ -41,10 +48,10 @@ export default function card({
           <Typography variant="body2">{length}min</Typography>
         </CardContent>
         <CardActions>
-          <Button size="medium" className="detailsButton" onClick={handleClick}>
+          <Button size="medium" className="detailsButton" onClick={handleDetails}>
             Details
           </Button>
-          <Button size="medium" className="detailsButton" onClick={handleClick}>
+          <Button size="medium" className="detailsButton" onClick={handleDelete}>
             <DeleteForeverIcon color="error"></DeleteForeverIcon>
           </Button>
         </CardActions>

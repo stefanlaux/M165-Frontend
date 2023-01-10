@@ -21,7 +21,7 @@ export default function Movies() {
   const [movies, setMovies] = React.useState([]);
 
   useEffect(() =>{
-    axios.get('http://10.62.105.47:8080/movies/').then((response) => {
+    axios.get('http://10.62.105.7:8080/movies/').then((response) => {
       setMovies(response.data);
     });
   }, [])
