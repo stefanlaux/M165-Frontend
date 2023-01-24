@@ -24,6 +24,7 @@
    right: 5%;
    top: 3%;
    position: absolute!important;
+  z-index: 3;
    transform: translate(50%);
 }
 
@@ -31,5 +32,6 @@
     left: 5%;
     top: 3%;
     position: absolute!important;
+    z-index: 3;
     transform: translate(-50%);
 }
